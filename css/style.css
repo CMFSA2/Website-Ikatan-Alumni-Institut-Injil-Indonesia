@@ -318,7 +318,7 @@ footer .socials a {
 
 footer .socials a:hover,
 footer .links a:hover,
-footer .miscellaneous a:hover {
+footer .container a:hover {
   color: var(--primary);
 }
 
@@ -330,35 +330,45 @@ footer .links a {
   color: #fff;
   padding: 0.7rem 1rem;
 }
+ul {
+  list-style: none;
+}
+
+li a {
+  color: #fff;
+}
+
+footer .footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+footer .footer-col h4 {
+  font-weight: 700;
+  font-size: medium;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+footer .container {
+  max-width: 1170px;
+  margin: auto;
+  font-weight: 500;
+}
+footer .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .footer-col {
+  width: 20%;
+  padding: 0 15px;
+}
 
 footer .credit {
   font-size: 0.8rem;
 }
 
-footer .miscellaneous p {
-  text-align: center;
-}
-
 footer .credit a {
   color: var(--bg);
-  font-weight: 700;
-}
-
-footer .miscellaneous {
-  padding: 1rem 0;
-}
-
-footer .miscellaneous p {
-  color: #fff;
-  margin: 0rem 1rem;
-}
-
-footer .miscellaneous .container .isi-misc {
-  color: #fff;
-  margin: 0rem 1rem;
-}
-
-footer .miscellaneous .container {
   font-weight: 700;
 }
 
