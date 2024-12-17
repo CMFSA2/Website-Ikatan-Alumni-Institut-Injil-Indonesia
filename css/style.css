@@ -351,10 +351,9 @@ footer .miscellaneous {
 footer .miscellaneous p {
   color: #fff;
   margin: 0rem 1rem;
-  display: flex;
 }
 
-footer .miscellaneous a {
+footer .miscellaneous .container .isi-misc {
   color: #fff;
   margin: 0rem 1rem;
 }
