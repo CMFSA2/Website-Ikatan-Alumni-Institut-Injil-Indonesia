@@ -150,10 +150,16 @@ body {
 }
 
 /*Verse Section*/
+.verse h2 {
+  padding-left: 30rem;
+  padding-right: 30rem;
+}
 .verse p {
   text-align: center;
   font-size: 1.5rem;
   font-weight: 300;
+  padding-left: 30rem;
+  padding-right: 30rem;
 }
 
 /* About Section */
@@ -311,7 +317,8 @@ footer .socials a {
 }
 
 footer .socials a:hover,
-footer .links a:hover {
+footer .links a:hover,
+footer .miscellaneous a:hover {
   color: var(--primary);
 }
 
@@ -332,19 +339,27 @@ footer .miscellaneous p {
   text-align: center;
 }
 
-footer .row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 5rem;
-  justify-content: center;
-}
-
-footer .row .title {
-  text-align: center;
-  padding-bottom: 4rem;
-}
 footer .credit a {
   color: var(--bg);
+  font-weight: 700;
+}
+
+footer .miscellaneous {
+  padding: 1rem 0;
+}
+
+footer .miscellaneous p {
+  color: #fff;
+  margin: 0rem 1rem;
+  display: flex;
+}
+
+footer .miscellaneous a {
+  color: #fff;
+  margin: 0rem 1rem;
+}
+
+footer .miscellaneous .container {
   font-weight: 700;
 }
 
