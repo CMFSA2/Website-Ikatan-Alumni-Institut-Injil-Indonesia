@@ -447,6 +447,19 @@ footer .credit a {
 .news p {
   font-size: 1.5rem;
 }
+
+.container .row {
+  flex-wrap: wrap;
+}
+
+.container .row .footer-col h4 {
+  font-size: 1.5rem;
+}
+
+.container .row .footer-col a {
+  padding: 0rem;
+}
+
 /* Mobile Phone */
 @media (max-width: 1366px) {
   html {
