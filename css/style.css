@@ -168,7 +168,6 @@ body {
   margin: 0 60px 35px;
   padding: 20px 10px;
   overflow: hidden;
-  position: relative;
 }
 
 .up-card-list .up-card-item {
@@ -205,6 +204,10 @@ body {
   margin: 16px 0 18px;
   width: fit-content;
   border-radius: 50px;
+}
+
+.up-card-list .up-card-item .up-card-link:active {
+  cursor: grabbing;
 }
 
 .up-card-list .up-card-link .up-badge-ev1 {
@@ -254,6 +257,22 @@ body {
 .up-card-list .up-card-link:hover .up-card-button {
   color: var(--bg);
   background: var(--primary);
+}
+
+.up-card-wrapper .swiper-pagination-bullet {
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+  background: var(--primary);
+}
+
+.up-card-wrapper .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+.up-card-wrapper .swiper-slide-button {
+  color: var(--primary);
+  margin-top: -35px;
 }
 
 .container.swiper {
@@ -518,6 +537,26 @@ footer .credit a {
 
   .navbar .navbar-nav a:hover::after {
     transform: scaleX(0.2);
+  }
+
+  .verse {
+    display: inline-block;
+    flex-wrap: wrap;
+  }
+
+  .up-card-wrapper {
+    max-width: 350px;
+    margin: 0 10px 25px;
+    flex-wrap: wrap;
+  }
+
+  .swiper-pagination,
+  .swiper-slide-button {
+    display: none;
+  }
+
+  .up-card-wrapper .swiper-slide-button {
+    display: none;
   }
 
   .about .row {
