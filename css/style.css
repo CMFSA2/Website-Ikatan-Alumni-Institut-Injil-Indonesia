@@ -162,6 +162,100 @@ body {
   padding-right: 30rem;
 }
 
+/*Upcoming Events Section*/
+.up-card-wrapper {
+  max-width: 1100px;
+  margin: 0 60px 35px;
+  padding: 20px 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.up-card-list .up-card-item {
+  list-style: none;
+}
+
+.up-card-list .up-card-item .up-card-link {
+  user-select: none;
+  display: block;
+  background: #0084ff46;
+  padding: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  transition: 0.2s ease;
+}
+
+.up-card-list .up-card-item .up-card-link:hover {
+  border-color: #0084ff;
+}
+
+.up-card-list .up-card-link .up-card-img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.up-card-list .up-card-link p {
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 16px 0 18px;
+  width: fit-content;
+  border-radius: 50px;
+}
+
+.up-card-list .up-card-link .up-badge-ev1 {
+  color: #00c3ff;
+  background: #060270cb;
+}
+
+.up-card-list .up-card-link .up-badge-ev2 {
+  color: #00e0ce;
+  background: #2e8b84;
+}
+
+.up-card-list .up-card-link .up-badge-ev3 {
+  color: #eb6400;
+  background: #6b4d36;
+}
+
+.up-card-list .up-card-link .up-badge-ev4 {
+  color: #eab000;
+  background: #6b5e36;
+}
+
+.up-card-list .up-card-link .up-badge-ev5 {
+  color: #2cf001;
+  background: #427038;
+}
+
+.up-card-list .up-card-link .up-card-title {
+  font-size: 1.19rem;
+  color: #000;
+  font-weight: 600;
+}
+
+.up-card-list .up-card-link .up-card-button {
+  height: 35px;
+  width: 35px;
+  color: var(--primary);
+  border-radius: 50%;
+  margin: 30px 0 5px;
+  background: none;
+  cursor: pointer;
+  border: 2px solid var(--primary);
+  transform: rotate(-45deg);
+  transition: 0.4s ease;
+}
+
+.up-card-list .up-card-link:hover .up-card-button {
+  color: var(--bg);
+  background: var(--primary);
+}
+
 /* About Section */
 .about,
 .news,

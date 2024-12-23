@@ -16,8 +16,12 @@
     <script src="https://unpkg.com/feather-icons"></script>
 
     <!--My Style-->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css">
     
+    <!--Slider Swiper JS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
     <body>
     <!-- Navbar Start -->
      <nav class="navbar">
@@ -68,6 +72,55 @@
 <!-- Verse Section End -->
 
 <!-- Upcoming Events Start -->
+ <div class="container swiper">
+  <div class="up-card-wrapper">
+    <ul class="up-card-list swiper-wrapper">
+      <li class="up-card-item swiper-slide">
+        <a href="#" class="up-card-link">
+          <img src="img/header-bg.jpg" alt="Card-Img-Upcoming" class="up-card-img">
+          <p class="up-badge-ev1">Event 1</p>
+          <h2 class="up-card-title">Perayaan Natal Alumni</h2>
+          <button class="up-card-button"><i data-feather="arrow-right"></i></button>
+        </a>
+      </li>
+      <li class="up-card-item swiper-slide">
+        <a href="#" class="up-card-link">
+          <img src="img/header-bg.jpg" alt="Card-Img-Upcoming" class="up-card-img">
+          <p class="up-badge-ev2">Event 2</p>
+          <h2 class="up-card-title">Perayaan Tahun Baru Alumni</h2>
+          <button class="up-card-button"><i data-feather="arrow-right"></i></button>
+        </a>
+      </li>
+      <li class="up-card-item swiper-slide">
+        <a href="#" class="up-card-link">
+          <img src="img/header-bg.jpg" alt="Card-Img-Upcoming" class="up-card-img">
+          <p class="up-badge-ev3">Event 3</p>
+          <h2 class="up-card-title">Dari Hati Ke Hati</h2>
+          <button class="up-card-button"><i data-feather="arrow-right"></i></button>
+        </a>
+      </li>
+      <li class="up-card-item swiper-slide">
+        <a href="#" class="up-card-link">
+          <img src="img/header-bg.jpg" alt="Card-Img-Upcoming" class="up-card-img">
+          <p class="up-badge-ev4">Event 4</p>
+          <h2 class="up-card-title">Doa Bersama Alumni</h2>
+          <button class="up-card-button"><i data-feather="arrow-right"></i></button>
+        </a>
+      </li>
+      <li class="up-card-item swiper-slide">
+        <a href="#" class="up-card-link">
+          <img src="img/header-bg.jpg" alt="Card-Img-Upcoming" class="up-card-img">
+          <p class="up-badge-ev5">Event 5</p>
+          <h2 class="up-card-title">Berita Acara Alumni</h2>
+          <button class="up-card-button"><i data-feather="arrow-right"></i></button>
+        </a>
+      </li>
+    </ul>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+ </div>
 <!-- Upcoming Events End -->
 
     <!-- About Section Start -->
@@ -211,6 +264,9 @@
   <script>
     feather.replace();
   </script>
+
+<!-- Slider Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <!-- My Javascript -->
   <script src="js/script.js"></script>
