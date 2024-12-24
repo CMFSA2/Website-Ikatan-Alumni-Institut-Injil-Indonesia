@@ -234,7 +234,7 @@ body {
   background: #0084ff46;
   position: relative;
   top: 0vh;
-  height: 332px;
+  height: 340px;
   padding: 18px;
   border-radius: 12px;
   text-decoration: none;
@@ -668,8 +668,8 @@ footer .credit a {
   }
 
   .container.swiper {
-    max-height: 425px;
-    max-width: 425px;
+    max-height: 400px;
+    max-width: 300px;
   }
 
   .up-card-wrapper {
@@ -681,8 +681,15 @@ footer .credit a {
 
   .up-card-list .up-card-item .up-card-link2 {
     top: 0vh;
-    height: 353px;
+    height: 315px;
     padding: 18px;
+  }
+
+  .up-card-list .up-card-link2 .up-card-title {
+    font-size: 1.19rem;
+    color: #000;
+    font-weight: 600;
+    padding-bottom: 29px;
   }
 
   .swiper-pagination,
@@ -695,7 +702,7 @@ footer .credit a {
   }
 
   .about {
-    height: 500px;
+    height: 550px;
   }
 
   .about .row {

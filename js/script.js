@@ -45,6 +45,9 @@ new Swiper(".up-card-wrapper", {
       slidesPerView: 1,
     },
     1024: {
+      slidesPerView: 1,
+    },
+    1366: {
       slidesPerView: 3,
     },
   },
