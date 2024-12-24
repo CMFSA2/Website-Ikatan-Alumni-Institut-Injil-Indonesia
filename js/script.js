@@ -38,6 +38,9 @@ new Swiper(".up-card-wrapper", {
     0: {
       slidesPerView: 1,
     },
+    100: {
+      slidesPerView: 1,
+    },
     768: {
       slidesPerView: 1,
     },
