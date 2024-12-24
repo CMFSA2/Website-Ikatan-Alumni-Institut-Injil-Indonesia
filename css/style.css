@@ -338,7 +338,7 @@ body {
   width: 35px;
   color: var(--primary);
   border-radius: 50%;
-  margin: 20px 0 5px;
+  margin: 2px 0 5px;
   background: none;
   cursor: pointer;
   border: 2px solid var(--primary);
@@ -379,18 +379,12 @@ body {
 
 /* About Section */
 .about {
+  width: 100%;
+  height: 700px;
   padding: 6rem 7% 1.4rem;
+  margin-top: 2.5rem;
   color: #060270;
-}
-
-.about h2 {
-  text-align: center;
-  font-size: 2.6rem;
-  margin-bottom: 3rem;
-}
-
-.about h2 span {
-  color: var(--primary);
+  background-color: #4da9ff91;
 }
 
 .about .row {
@@ -412,12 +406,19 @@ body {
   text-align: justify;
 }
 
+.about .row .content h1 {
+  font-size: 2rem;
+  margin-bottom: -1rem;
+}
+
 .about .row .content h3 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   margin-bottom: 1rem;
 }
 
-.about .row .content p {
+.about .row .content p,
+ul,
+li {
   margin-bottom: 0.8rem;
   font-size: 1.3rem;
   font-weight: 300;
@@ -434,10 +435,6 @@ body {
   text-align: center;
   font-size: 2.6rem;
   margin-bottom: 0.5rem;
-}
-
-.news h2 span {
-  color: var(--primary);
 }
 
 .news p {
@@ -458,12 +455,14 @@ body {
 
 .news .row .news-card {
   text-align: center;
+  padding-inline: 1rem;
   padding-bottom: 4rem;
 }
 
 .news .row .news-card img {
   border-radius: 50%;
-  width: 80%;
+  max-width: 200px;
+  max-height: 200px;
 }
 
 .news .row .news-card .news-card-title {
@@ -683,6 +682,10 @@ footer .credit a {
 
   .up-card-wrapper .swiper-slide-button {
     display: none;
+  }
+
+  .about {
+    height: 500px;
   }
 
   .about .row {
