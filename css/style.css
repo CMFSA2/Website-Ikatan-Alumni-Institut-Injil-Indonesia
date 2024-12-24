@@ -185,12 +185,23 @@ body {
 }
 
 /*Upcoming Events Section*/
+h1 {
+  color: var(--secondary);
+  text-align: center;
+}
+
+h3 {
+  color: var(--primary);
+  text-align: center;
+}
+
 .container.swiper {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50px;
   height: 50vh;
+  padding: 6rem 7% 1.4rem;
 }
 
 .up-card-wrapper {
