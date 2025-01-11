@@ -153,3 +153,11 @@ body {
 .hero .content .cta:hover {
   background-color: #00498d;
 }
+
+/* Dana Section */
+.dana-title {
+  padding: 6rem 7% 1.4rem;
+  color: #060270;
+  text-align: center;
+  font-size: 1.5rem;
+}
