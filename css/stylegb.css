@@ -267,18 +267,81 @@ li {
 }
 
 /* Daya Section */
-.daya-section {
+.daya {
   padding: 6rem 7% 1.4rem;
-  width: 100%;
-  height: 1400px;
-  padding: 6rem 7% 1.4rem;
-  margin-top: 2.5rem;
   color: #060270;
 }
 
-.daya-title {
-  color: #060270;
+.daya h2 {
   text-align: center;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.daya p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
   font-size: 1.5rem;
-  padding-bottom: 2rem;
+}
+
+.daya .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.daya .row .daya-card {
+  text-align: center;
+  padding-inline: 1rem;
+  padding-bottom: 4rem;
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
+
+.daya .row .daya-card img {
+  border-radius: 50%;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.daya .row .daya-card .daya-card-title {
+  margin-top: 1.5rem auto 0.5rem;
+}
+
+.daya .row .daya-card .cta-sukacita {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+.daya .row .daya-card .cta-renungan {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+.daya .row .daya-card .cta-dukacita {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
