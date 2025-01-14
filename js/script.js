@@ -14,10 +14,14 @@ document.addEventListener("click", function (e) {
   }
 });
 
-//Toggle Swiper Active
-new Swiper(".up-card-wrapper", {
+// Slider Upcoming Events
+var swiper = new Swiper(".slide-content", {
+  slidesPerView: 3,
+  spaceBetween: 25,
   loop: true,
-  spaceBetween: 30,
+  centerSlide: "true",
+  fade: "true",
+  grabCursor: "true",
 
   // Pagination Bullets
   pagination: {
@@ -26,28 +30,23 @@ new Swiper(".up-card-wrapper", {
     dynamicBullets: true,
   },
 
-  // Navigation arrows
+  // Navigation Arrows
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
     lockclass: "swiper-button-lock",
   },
 
-  // Responsive Breakpoints
   breakpoints: {
     0: {
       slidesPerView: 1,
     },
-    100: {
-      slidesPerView: 1,
+
+    520: {
+      slidesPerView: 2,
     },
-    768: {
-      slidesPerView: 1,
-    },
-    1024: {
-      slidesPerView: 1,
-    },
-    1366: {
+
+    950: {
       slidesPerView: 3,
     },
   },

@@ -182,6 +182,7 @@ body {
 .dana-section .danarow .danaimg img {
   width: 100%;
   object-position: center;
+  border-radius: 30px;
 }
 
 .dana-section .danarow .danacontent {
@@ -222,6 +223,7 @@ li {
 .dana-section .danarow2 .danaimg2 img {
   width: 100%;
   object-position: center;
+  border-radius: 30px;
 }
 
 .dana-section .danarow2 .danacontent2 {
@@ -344,4 +346,79 @@ li {
   background-color: var(--primary);
   border-radius: 0.5rem;
   box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+/* Pokok Doa Section */
+
+/* Footer */
+footer {
+  background-color: var(--secondary);
+  text-align: center;
+  padding: 1rem 0 3rem;
+  margin-top: 3rem;
+}
+
+footer .socials {
+  padding: 1rem 0;
+}
+
+footer .socials a {
+  color: #fff;
+  margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover,
+footer .container a:hover {
+  color: var(--primary);
+}
+
+footer .links {
+  margin-bottom: 1.3rem;
+}
+
+footer .links a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+}
+ul {
+  list-style: none;
+}
+
+li a {
+  color: #fff;
+}
+
+footer .footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+footer .footer-col h4 {
+  font-weight: 700;
+  font-size: medium;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+footer .container {
+  max-width: 1170px;
+  margin: auto;
+  font-weight: 500;
+}
+footer .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .footer-col {
+  width: 20%;
+  padding: 0 15px;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+}
+
+footer .credit a {
+  color: var(--bg);
+  font-weight: 700;
 }
