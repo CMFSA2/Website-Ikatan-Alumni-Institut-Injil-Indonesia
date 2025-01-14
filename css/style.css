@@ -390,7 +390,7 @@ body {
 /* About Section */
 .about {
   width: 100%;
-  height: 700px;
+  height: 750px;
   padding: 6rem 7% 1.4rem;
   margin-top: 2.5rem;
   color: #060270;
@@ -628,12 +628,15 @@ footer .credit a {
 /* Media Queries */
 
 /* Laptop */
-@media (max-width: 1366px) {
+@media (max-width: 1440px) {
   html {
     font-size: 75%;
   }
-}
 
+  .about {
+    height: 550px;
+  }
+}
 /* Tablet */
 @media (max-width: 1366px) {
   html {
@@ -764,5 +767,9 @@ footer .credit a {
 @media (max-width: 1366px) {
   html {
     font-size: 50%;
+  }
+
+  .about {
+    height: 575px;
   }
 }
