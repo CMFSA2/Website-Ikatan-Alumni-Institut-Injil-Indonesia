@@ -1,0 +1,519 @@
+:root {
+  --primary: #0084ff;
+  --bg: #ffffff;
+  --secondary: #060270;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-family: "poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "poppins" sans-serif;
+  background-color: var(--bg);
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgb(0, 7, 102, 0.8);
+  border-bottom: 1px solid #ffba3a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+#menu {
+  display: none;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/tentang-kami.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 1%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.hero .content {
+  padding: 1.4rem 7%;
+  max-width: 60rem;
+}
+
+.hero .content h1 {
+  font-size: 5em;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0);
+  line-height: 1.2;
+}
+
+.hero .content h1 span {
+  color: var(--primary);
+}
+
+.hero .content p {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  line-height: 1.4;
+  font-weight: 200;
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0);
+}
+
+.hero .content .cta {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  transition: all 0.3s ease;
+}
+
+.hero .content .cta:hover {
+  background-color: #00498d;
+}
+
+/* Dana Section */
+.dana-section {
+  padding: 6rem 7% 1.4rem;
+  width: 100%;
+  height: 1400px;
+  padding: 6rem 7% 1.4rem;
+  margin-top: 2.5rem;
+  color: #060270;
+}
+
+.dana-title {
+  color: #060270;
+  text-align: center;
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.dana-section .danarow {
+  display: flex;
+}
+
+.dana-section .danarow .danaimg {
+  flex: 1 1 45rem;
+}
+
+.dana-section .danarow .danaimg img {
+  width: 100%;
+  object-position: center;
+  border-radius: 30px;
+}
+
+.dana-section .danarow .danacontent {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+  text-align: justify;
+}
+
+.dana-section .danarow .danacontent h1 {
+  font-size: 2rem;
+  margin-bottom: -1rem;
+  padding-bottom: 1rem;
+}
+
+.dana-section .danarow .danacontent h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.dana-section .danarow .danacontent p,
+ul,
+li {
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.dana-section .danarow2 {
+  display: flex;
+  margin-top: 7rem;
+}
+
+.dana-section .danarow2 .danaimg2 {
+  flex: 1 1 45rem;
+}
+
+.dana-section .danarow2 .danaimg2 img {
+  width: 100%;
+  object-position: center;
+  border-radius: 30px;
+}
+
+.dana-section .danarow2 .danacontent2 {
+  flex: 1 1 35rem;
+  padding: 0 1rem;
+  text-align: justify;
+}
+
+.dana-section .danarow2 .danacontent2 h1 {
+  font-size: 2rem;
+  margin-bottom: -1rem;
+  padding-bottom: 1rem;
+}
+
+.dana-section .danarow2 .danacontent2 h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.dana-section .danarow2 .danacontent2 p,
+ul,
+li {
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.dana-section .content .cta {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  transition: all 0.3s ease;
+}
+
+.dana-section .content .cta:hover {
+  background-color: #000088;
+}
+
+/* Daya Section */
+.daya {
+  padding: 6rem 7% 1.4rem;
+  color: #060270;
+}
+
+.daya h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.daya p {
+  text-align: center;
+  max-width: 30rem;
+  margin: auto;
+  font: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
+  font-size: 1.5rem;
+}
+
+.daya .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.daya .row .daya-card {
+  text-align: center;
+  padding-inline: 1rem;
+  padding-bottom: 4rem;
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
+
+.daya .row .daya-card img {
+  border-radius: 50%;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.daya .row .daya-card .daya-card-title {
+  margin-top: 1.5rem auto 0.5rem;
+}
+
+.daya .row .daya-card .cta-sukacita {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+.daya .row .daya-card .cta-renungan {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+.daya .row .daya-card .cta-dukacita {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+/* Pokok Doa Section */
+.pd {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.slider-container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.slider-wrapper .slider-item {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.slider-wrapper .slider-item::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(20%);
+  background-image: url("../img/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.slider-wrapper .slider-item:nth-child(2):before {
+  background-image: url("../img/header-bg.jpg");
+}
+.slider-wrapper .slider-item:nth-child(3):before {
+  background-image: url("../img/tentang-kami.JPG");
+}
+.slider-wrapper .slider-item:nth-child(4):before {
+  background-image: url("../img/DYS02621.jpg");
+}
+.slider-wrapper .slider-item:nth-child(5):before {
+  background-image: url("../img/DYS02632.jpg");
+}
+
+.slider-wrapper .slider-item .slide-content {
+  color: #fff;
+  z-index: 20;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px 10px;
+  max-width: 1400px;
+  position: relative;
+}
+
+.slider-wrapper .slider-item .slide-content * {
+  max-width: 35%;
+}
+
+.slider-item .slide-content .slide-subtitle {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.slider-item .slide-content .slide-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+
+.slider-item .slide-content .slide-description {
+  margin-top: 25px;
+  line-height: 25px;
+}
+
+.slider-item .slide-content .slide-button {
+  color: #fff;
+  width: 250px;
+  padding: 13px 0;
+  display: block;
+  margin-top: 45px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #fff;
+  transition: 0.5s ease;
+}
+
+.slider-item .slide-content .slide-button:hover {
+  color: #fff;
+  background-color: #0084ff;
+}
+
+/* Footer */
+footer {
+  background-color: var(--secondary);
+  text-align: center;
+  padding: 1rem 0 3rem;
+  margin-top: 3rem;
+}
+
+footer .socials {
+  padding: 1rem 0;
+}
+
+footer .socials a {
+  color: #fff;
+  margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover,
+footer .container a:hover {
+  color: var(--primary);
+}
+
+footer .links {
+  margin-bottom: 1.3rem;
+}
+
+footer .links a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+}
+ul {
+  list-style: none;
+}
+
+li a {
+  color: #fff;
+}
+
+footer .footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+footer .footer-col h4 {
+  font-weight: 700;
+  font-size: medium;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+footer .container {
+  max-width: 1170px;
+  margin: auto;
+  font-weight: 500;
+}
+footer .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .footer-col {
+  width: 20%;
+  padding: 0 15px;
+}
+
+footer .credit {
+  font-size: 0.8rem;
+}
+
+footer .credit a {
+  color: var(--bg);
+  font-weight: 700;
+}
