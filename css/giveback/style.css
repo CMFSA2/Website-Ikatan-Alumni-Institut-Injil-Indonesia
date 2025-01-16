@@ -21,6 +21,7 @@ html {
 }
 
 body {
+  max-height: 100%;
   font-family: "poppins" sans-serif;
   background-color: var(--bg);
   color: #fff;
@@ -357,6 +358,7 @@ li {
 }
 
 .slider-container {
+  position: relative;
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -444,6 +446,39 @@ li {
 .slider-item .slide-content .slide-button:hover {
   color: #fff;
   background-color: #0084ff;
+}
+
+.slider-container .slider-controls {
+  position: absolute;
+  bottom: 45px;
+  z-index: 20;
+  width: 100%;
+}
+
+.slider-controls .slider-pagination {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1400px;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.slider-pagination .slider-indicator {
+  position: absolute;
+  bottom: 12.5;
+  border-bottom: 2px solid #fff;
+  transition: 0.4s ease-in-out;
+}
+
+.slider-pagination .slider-tab {
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 20px 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 /* Footer */
