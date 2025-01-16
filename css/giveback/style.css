@@ -350,14 +350,11 @@ li {
 }
 
 /* Pokok Doa Section */
-.pd {
+.slider-container {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-}
-
-.slider-container {
   position: relative;
   height: 100%;
   width: 100%;
