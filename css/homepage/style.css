@@ -26,7 +26,7 @@ body {
   color: #fff;
 }
 
-/* Navbar */
+/* Navigasi */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -42,7 +42,7 @@ body {
 }
 
 .navbar .navbar-logo {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 700;
   color: #fff;
 }
@@ -147,11 +147,16 @@ body {
   background-color: var(--primary);
   border-radius: 0.5rem;
   box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  transition: all 0.3s ease;
+}
+
+.hero .content .cta:hover {
+  background-color: #000088;
 }
 
 /*Verse Section*/
 .verse {
-  padding: 6rem 7% 1.4rem;
+  padding: 8rem 7% 1.4rem;
 }
 
 .verse .container-ver {
@@ -183,14 +188,14 @@ body {
   color: var(--secondary);
 }
 
-/* Kegiatan Terbaru */
+/* Upcoming Events */
 .kt-title {
   margin-top: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--secondary);
-  padding: 1rem 7% 1.4rem;
+  padding: 5.5rem 7% 1.4rem;
 }
 
 .subtitle {
@@ -330,7 +335,7 @@ body {
   left: 0;
 }
 
-/* About Section */
+/* Give Back Section */
 .about {
   width: 100%;
   height: 750px;
@@ -424,7 +429,7 @@ li {
 
 .news .row .news-card {
   text-align: center;
-  padding-inline: 1rem;
+  padding-inline: 3rem;
   padding-bottom: 4rem;
 }
 
@@ -436,9 +441,14 @@ li {
 
 .news .row .news-card .news-card-title {
   margin-top: 1.5rem auto 0.5rem;
+  font-size: 20px;
 }
 
-.news .row .news-card .cta-sukacita {
+.news .row .news-card .news-card-desc {
+  font-size: 20px;
+}
+
+.news .row .news-card .cta-1 {
   margin-top: 1rem;
   display: inline-block;
   padding: 1rem 3rem;
@@ -447,6 +457,11 @@ li {
   background-color: var(--primary);
   border-radius: 0.5rem;
   box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+  transition: all 0.3s ease;
+}
+
+.news .row .news-card .cta-1:hover {
+  background-color: #000088;
 }
 
 .news .row .news-card .cta-renungan {
@@ -475,6 +490,16 @@ li {
 .contact {
   padding: 6rem 7% 1.4rem;
   color: #060270;
+  display: flex;
+  align-content: center;
+}
+
+.contact .kontak-kami {
+  flex: 0.5 0 0rem;
+}
+
+.contact .no-rek {
+  flex: 0.5 0 0rem;
 }
 
 .contact h2 {
