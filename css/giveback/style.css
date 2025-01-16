@@ -350,11 +350,13 @@ li {
 }
 
 /* Pokok Doa Section */
-.slider-container {
+.pd {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+}
+.slider-container {
   position: relative;
   height: 100%;
   width: 100%;
@@ -450,6 +452,8 @@ li {
   bottom: 45px;
   z-index: 20;
   width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
 }
 
 .slider-controls .slider-pagination {
@@ -473,7 +477,7 @@ li {
   color: #ffffff;
   text-align: center;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   padding: 20px 30px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
