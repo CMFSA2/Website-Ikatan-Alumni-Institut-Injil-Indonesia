@@ -41,6 +41,10 @@ body {
   z-index: 9999;
 }
 
+.navbar img {
+  max-width: 75px;
+}
+
 .navbar .navbar-logo {
   font-size: 1.75rem;
   font-weight: 700;
