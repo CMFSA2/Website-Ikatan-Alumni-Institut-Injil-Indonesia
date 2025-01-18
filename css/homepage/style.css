@@ -123,8 +123,8 @@ body {
   max-width: 60rem;
 }
 
-.hero .content h1 {
-  font-size: 5em;
+.hero .content .welcome h1 {
+  font-size: 5rem;
   color: #fff;
   text-shadow: 1px 1px 3px rgba(255, 255, 255, 0);
   line-height: 1.2;
@@ -144,7 +144,7 @@ body {
 
 .container h1 {
   color: #fff;
-  font-size: 75px;
+  font-size: 3rem;
 }
 
 .content .container span {
@@ -155,7 +155,7 @@ body {
   font-size: 1.4rem;
   margin-top: 1rem;
   line-height: 1.4;
-  font-weight: 200;
+  font-weight: 300;
   text-shadow: 1px 1px 3px rgba(255, 255, 255, 0);
 }
 
@@ -625,8 +625,8 @@ footer .credit a {
     height: 550px;
   }
 }
-/* Tablet */
-@media (max-width: 1366px) {
+/* Tablet 1024 */
+@media (max-width: 1024px) {
   html {
     font-size: 60%;
   }
@@ -674,42 +674,18 @@ footer .credit a {
     height: 200px;
   }
 
-  .container.swiper {
-    max-height: 400px;
-    max-width: 300px;
+  .kt-title,
+  .subtitle {
+    font-size: 1.5rem;
   }
 
-  .up-card-wrapper {
-    max-height: 385px;
-    max-width: 350px;
-    margin: 0 10px 25px;
-    flex-wrap: wrap;
-  }
-
-  .up-card-list .up-card-item .up-card-link2 {
-    top: 0vh;
-    height: 315px;
-    padding: 18px;
-  }
-
-  .up-card-list .up-card-link2 .up-card-title {
-    font-size: 1.19rem;
-    color: #000;
-    font-weight: 600;
-    padding-bottom: 29px;
-  }
-
-  .swiper-pagination,
-  .swiper-slide-button {
-    display: none;
-  }
-
-  .up-card-wrapper .swiper-slide-button {
-    display: none;
+  .slide-container {
+    scale: 75%;
   }
 
   .about {
-    height: 550px;
+    height: 450px;
+    max-height: 1000px;
   }
 
   .about .row {
@@ -735,8 +711,12 @@ footer .credit a {
   font-size: 1.5rem;
 }
 
-.news p {
-  font-size: 1.5rem;
+.news h2,
+p {
+  font-size: 2rem;
+}
+.news {
+  scale: 90%;
 }
 
 .container .row {
@@ -751,13 +731,238 @@ footer .credit a {
   padding: 0rem;
 }
 
+footer .socials,
+.container {
+  scale: 100%;
+}
+
+footer .credit {
+  scale: 60%;
+}
+
+/* Tablet */
+@media (max-width: 853px) {
+  html {
+    font-size: 60%;
+  }
+
+  #menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: rgba(6, 2, 112, 0.8);
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: var(--bg);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
+  }
+
+  .verse .container-ver {
+    height: 25vh;
+  }
+
+  .verse .wrapper-ver {
+    width: 400px;
+    height: 200px;
+  }
+
+  .kt-title,
+  .subtitle {
+    font-size: 1.5rem;
+  }
+
+  .slide-container {
+    scale: 75%;
+  }
+
+  .about {
+    height: 625px;
+    max-height: 1000px;
+  }
+
+  .about .row {
+    flex-wrap: wrap;
+  }
+
+  .about .row .about-img img {
+    height: 24rem;
+    object-fit: cover;
+  }
+}
+
+.about .row .content {
+  padding: 1;
+}
+
+.about .row h3 {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.about .row .content p {
+  font-size: 1.5rem;
+}
+
+.news h2,
+p {
+  font-size: 2rem;
+}
+.news {
+  scale: 90%;
+}
+
+.container .row {
+  flex-wrap: wrap;
+}
+
+.container .row .footer-col h4 {
+  font-size: 1.5rem;
+}
+
+.container .row .footer-col a {
+  padding: 0rem;
+}
+
+footer .socials,
+.container {
+  scale: 100%;
+}
+
+footer .credit {
+  scale: 60%;
+}
+
 /* Mobile Phone */
-@media (max-width: 1366px) {
+@media (max-width: 540px) {
   html {
     font-size: 50%;
   }
 
+  .navbar img {
+    scale: 65%;
+  }
+
+  .hero .container span.auto-type {
+    font-size: 3rem;
+  }
+
+  .kt-title,
+  .subtitle {
+    font-size: 1.25rem;
+  }
+
+  .slide-container {
+    scale: 60%;
+  }
+
   .about {
-    height: 575px;
+    height: 565px;
+    max-height: 100%;
+  }
+
+  .contact {
+    max-width: 100%;
+  }
+
+  .contact h2,
+  p {
+    font-size: 1.5rem;
+  }
+
+  .contact .kontak-kami {
+    margin-right: 3rem;
+  }
+
+  .contact .no-rek {
+    margin-left: 3rem;
+  }
+
+  footer .socials,
+  .container * {
+    font-size: 1.5rem;
+    scale: 90%;
+  }
+
+  footer .credit {
+    font-size: 3rem;
+  }
+}
+
+/* Mobile Phone Foldable */
+@media (max-width: 344px) {
+  html {
+    font-size: 50%;
+  }
+
+  .navbar img {
+    scale: 65%;
+  }
+
+  .hero .container span.auto-type {
+    font-size: 3rem;
+  }
+
+  .kt-title,
+  .subtitle {
+    font-size: 1.25rem;
+  }
+
+  .slide-container {
+    scale: 60%;
+  }
+
+  .about {
+    height: 580px;
+    max-height: 100%;
+  }
+
+  .contact {
+    max-width: 100%;
+  }
+
+  .contact h2,
+  p {
+    font-size: 1.5rem;
+  }
+
+  .contact .kontak-kami {
+    margin-right: 3rem;
+  }
+
+  .contact .no-rek {
+    margin-left: 3rem;
+  }
+
+  footer .socials,
+  .container * {
+    font-size: 1.5rem;
+    scale: 90%;
+  }
+
+  footer .credit {
+    font-size: 3rem;
   }
 }
