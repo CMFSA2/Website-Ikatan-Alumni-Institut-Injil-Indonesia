@@ -47,13 +47,12 @@
       <main class="content">
         <h1>
           Selamat Datang di Website Ikatan Alumni
-          <span>Institut Injil Indonesia</span>
+          <span class="title">Institut Injil Indonesia</span>
         </h1>
-        <p>
-          Website ini dikelola secara langsung oleh bidang Informasi Teknologi
-          (IT) IA I-3 dan dibawah tanggung jawab ketua Ikatan Alumni Institut
-          Injil Indonesia
-        </p>
+        <div class="container">
+          <h1>We are One in <span class="auto-type"></span></h1>
+          <p>United For Vision Resiliency and Mission Sustainability.</p>
+        </div>
         <a href="#verse" class="cta">Lebih Lanjut</a>
       </main>
     </section>
@@ -297,6 +296,11 @@
       </div>
 
   <div class="credit">
+    <p>
+      Website ini dikelola secara langsung oleh bidang Informasi Teknologi
+      (IT) IA I-3 dan dibawah tanggung jawab ketua Ikatan Alumni Institut
+      Injil Indonesia.
+    </p>
     <p>Created by <a href="">Christian Marlen Firuli Simarmata</a>. | &copy; 2024. Made with love.</p>
   </div>
 </footer>
@@ -312,5 +316,15 @@
 
 <!-- My Javascript -->
   <script src="js/homepage/script.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  
+  <script>
+    var typed = new Typed(".auto-type",{
+      strings : ["Love.", "Spirit.", "Purpose."],
+      typeSpeed : 150,
+      backSpeed : 150,
+      loop : true,
+    })
+  </script>
   </body>
 </html>
