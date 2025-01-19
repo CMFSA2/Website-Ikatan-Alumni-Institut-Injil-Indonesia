@@ -42,6 +42,10 @@ body {
   z-index: 9999;
 }
 
+.navbar img {
+  max-width: 50px;
+}
+
 .navbar .navbar-logo {
   font-size: 1.75rem;
   font-weight: 700;
@@ -568,9 +572,43 @@ footer .credit a {
 }
 
 /* Laptop, Tablet */
-@media (max-width: 1440px) {
+@media (max-width: 1024px) {
   html {
     font-size: 65%;
+  }
+
+  #menu {
+    display: inline-block;
+  }
+
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: rgba(6, 2, 112, 0.8);
+    width: 30rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: var(--bg);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
   }
 
   .dana-section {
@@ -588,6 +626,10 @@ footer .credit a {
     font-size: 65%;
   }
 
+  #menu {
+    display: inline-block;
+  }
+
   .dana-section {
     height: 700px;
   }
@@ -601,6 +643,14 @@ footer .credit a {
 @media (max-width: 425px) {
   html {
     font-size: 50%;
+  }
+
+  #menu {
+    display: inline-block;
+  }
+
+  .navbar img {
+    scale: 65%;
   }
 
   .dana-section {
