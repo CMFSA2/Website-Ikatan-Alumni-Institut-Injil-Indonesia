@@ -43,7 +43,7 @@ body {
 }
 
 .navbar .navbar-logo {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 700;
   color: #fff;
 }
@@ -121,7 +121,7 @@ body {
 }
 
 .hero .content h1 {
-  font-size: 5em;
+  font-size: 5rem;
   color: #fff;
   text-shadow: 1px 1px 3px rgba(255, 255, 255, 0);
   line-height: 1.2;
@@ -160,7 +160,6 @@ body {
   padding: 6rem 7% 1.4rem;
   width: 100%;
   height: 1400px;
-  padding: 6rem 7% 1.4rem;
   margin-top: 2.5rem;
   color: #060270;
 }
@@ -553,4 +552,77 @@ footer .credit {
 footer .credit a {
   color: var(--bg);
   font-weight: 700;
+}
+
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1440px) {
+  html {
+    font-size: 75%;
+  }
+
+  .dana-section {
+    height: 1075px;
+  }
+}
+
+/* Laptop, Tablet */
+@media (max-width: 1440px) {
+  html {
+    font-size: 65%;
+  }
+
+  .dana-section {
+    height: 825px;
+  }
+
+  .slider-pagination .slider-indicator {
+    bottom: 9;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+
+  .dana-section {
+    height: 700px;
+  }
+
+  .slider-pagination .slider-indicator {
+    bottom: 9;
+  }
+}
+
+/* Mobile */
+@media (max-width: 425px) {
+  html {
+    font-size: 50%;
+  }
+
+  .dana-section {
+    height: 685px;
+  }
+
+  .slider-pagination .slider-indicator {
+    bottom: 9;
+  }
+
+  .slider-wrapper,
+  .slider-controls {
+    max-width: 425px;
+  }
+
+  footer .socials,
+  .container * {
+    font-size: 2rem;
+    scale: 90%;
+  }
+
+  footer .credit {
+    font-size: 1rem;
+  }
 }
